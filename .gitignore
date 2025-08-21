@@ -1,0 +1,13 @@
+# Build
+bin/
+obj/
+
+# IDE
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Dotenv / configuración sensible
+.env
