@@ -1,13 +1,45 @@
-# Build
+# Build results
 bin/
 obj/
+out/
+Debug/
+Release/
 
-# IDE
+# Visual Studio / VS Code files
 .vscode/
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
 
-# Dotenv / configuración sensible
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+*.nuspec
+
+# Logs
+*.log
+*.tlog
+
+# Environment files
 .env
+.env.*
+
+# Docker
+**/docker-compose.override.yml
+**/docker-compose.override.*.yml
+**/Dockerfile.local
+.docker/
+
+# Resharper / Rider
+*.DotSettings.user
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Others
+*.tmp
+*.bak
