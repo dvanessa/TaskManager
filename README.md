@@ -1,29 +1,18 @@
-# TaskManager API
+# TaskManager 🚀
 
-API para gestión de tareas construida con ASP.NET Core 8, PostgreSQL, Entity Framework Core, y autenticación con JWT.
+Proyecto de **gestión de tareas** desarrollado con **.NET 8** y **PostgreSQL**, siguiendo arquitectura en capas (API, Application, Domain, Persistence).  
 
-## Funcionalidades
+## 🔑 Características
+- API REST con **.NET 8**
+- **Entity Framework Core** + PostgreSQL
+- **JWT Authentication**
+- **AutoMapper** para mapeo de DTOs
+- Contenedores con **Docker + pgAdmin**
+- Documentación con **Swagger**
 
-- Crear, leer, actualizar y eliminar tareas
-- Autenticación básica con login por token JWT
-- Validaciones con Data Annotations
-- AutoMapper para DTOs
-- Swagger UI para pruebas de endpoints
+## 🚀 Cómo ejecutar
+```bash
+docker-compose up -d
+dotnet ef database update --project TaskManager.Persistence --startup-project TaskManager.API
+dotnet run --project TaskManager.API
 
-## Requisitos
-
-- .NET SDK 8.0 o superior
-- PostgreSQL (puede usarse vía Docker)
-- Visual Studio Code o editor compatible
-
-## Uso
-
-1. Clonar el repositorio
-2. Configurar `appsettings.json` con tu cadena de conexión
-3. Ejecutar migraciones
-4. Iniciar el proyecto con `dotnet run`
-
-## Swagger
-
-Después de ejecutar el proyecto, visita:
-https://localhost:7164/swagger
